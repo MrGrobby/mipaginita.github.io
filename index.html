@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Unidades</title>
+  <link rel="stylesheet" href="converter.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Conversor de Unidades de Distancia</h1>
+    <label for="inputValue">Ingrese el valor:</label>
+    <input class="input" type="number" id="inputValue" placeholder="Ingrese el valor" required>
+
+    <label for="fromUnit">De:</label>
+    <select class="input" id="fromUnit">
+      <option value="meters">Metros</option>
+      <option value="kilometers">Kilómetros</option>
+      <option value="miles">Millas</option>
+    </select>
+
+    <label for="toUnit">A:</label>
+    <select class="input" id="toUnit">
+      <option value="meters">Metros</option>
+      <option value="kilometers">Kilómetros</option>
+      <option value="miles">Millas</option>
+    </select>
+
+    <button onclick="convert()">Convertir</button>
+
+    <p id="result">Resultado: </p>
+  </div>
+
+  <script src="converter.js"></script>
+</body>
+
+</html>
